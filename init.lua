@@ -21,6 +21,7 @@ require('lv-which-key')
 
 -- TODO is there a way to do this without vimscript
 vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
+vim.cmd("let g:vimspector_enable_mappings='VISUAL_STUDIO'")
 
 -- LSP
 require('lsp')
