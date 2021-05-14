@@ -46,9 +46,6 @@ return require("packer").startup(
         use {"nvim-telescope/telescope.nvim", opt = true}
         use {"nvim-telescope/telescope-fzy-native.nvim", opt = true}
 
-        -- Debugging
-        use {"mfussenegger/nvim-dap", opt = true}
-
         -- Autocomplete
         use {"hrsh7th/nvim-compe", opt = true}
         use {"hrsh7th/vim-vsnip", opt = true}
@@ -81,6 +78,14 @@ return require("packer").startup(
         -- Status Line and Bufferline
         use {"glepnir/galaxyline.nvim", opt = true}
         use {"romgrk/barbar.nvim", opt = true}
+
+        -- Pytest
+        use {"vim-test/vim-test"} 
+        -- Debugging
+        use {"puremourning/vimspector"}
+        -- DiffView
+        use {"sindrets/diffview.nvim"} 
+
 
         require_plugin("nvim-lspconfig")
         require_plugin("lspsaga.nvim")
